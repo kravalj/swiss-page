@@ -1,0 +1,78 @@
+.Page {
+    overflow: hidden;
+}
+
+.Welcome {
+
+    margin-top: 200px;
+}
+
+.Link {
+    text-decoration: none;
+    Color: black;
+}
+
+.SidebarTitle {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+
+.Side {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: -10px;
+    font-family: vivaldi;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+
+.Subtitle {
+    text-align: center;
+}
+
+.picCHS {
+    width: 500px;
+    margin-top: 5%;
+    border: 2px solid #7878f3;
+    border-radius: 1rem;
+}
+
+.picCHS:hover {
+    width: 600px;
+}
+
+.Text {
+    padding-left: 1rem;
+}
+
+.Contact {
+    padding-left: 10rem;
+}
+
+.contactInfo {
+    padding-left: 5px;
+    font-weight: 1;
+}
+
+.mapGoogle {
+    margin-left: 10rem;
+    width: 1250px;
+    float: left;
+    box-shadow: 7px 7px 7px #888888;
+
+}
+
+.mapGoogle:hover {
+    margin-left: 10rem;
+    width: 1250px;
+    float: left;
+    box-shadow: 7px 7px 7px lightblue;
+}
+
+.ContactsInfo {
+    display: flex;
+
+}
+
+.LinkGA:hover {
+    color: crimson;
+}
