@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import {Button, Card, CardActionArea, CardMedia, Paper, Typography} from '@material-ui/core';
+import Image from 'material-ui-image';
+import {BrowserRouter as Router, Route, Switch, Link, Redirect} from "react-router-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//Pages
+import MainPage from "./pages/MainPage"
+import WelcomePage from './pages/WelcomePage';
+import NotFoundPage from './pages/404'
+import Contact from "./pages/Contact";
+
+
+class App extends Component {
+  render() {
+    return (
+
+        <Router>
+          <Switch>
+            <Route exact path="/" component={MainPage}/>
+            <Route exact path="/404" component={NotFoundPage}/>
+            <Route exact path="/WelcomePage" component={WelcomePage}/>
+            <Route exact path="/Contact" component={Contact}/>
+            <Redirect to="/404"/>
+          </Switch>
+        </Router>
+
+    )
+  }
 }
 
 export default App;
